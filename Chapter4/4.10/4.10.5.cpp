@@ -13,7 +13,7 @@ struct Employee		// 14 bytes -> 16 bytes
 int main()
 {
 	Employee emp1;
-	// sizeof()는 structure의 size를 잴 때도 사용가능하다.
+	// sizeof()는 structure의 size를 잴 때도 사용 가능하다.
 	// 2 + (2 - padding) + 4 + 8 = 16 bytes
 	cout << sizeof(Employee) << endl; // 14 bytes가 아닌 16 bytes로 출력됨
 
