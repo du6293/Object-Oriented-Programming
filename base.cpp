@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namepace std;
+using namespace std;
 
 int main()
 {
