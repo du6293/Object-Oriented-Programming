@@ -1,8 +1,10 @@
 #include <iostream>
 
+using namepace std;
+
 int main()
 {
-	using namespace std;
+	
 
 	return 0;
 }
