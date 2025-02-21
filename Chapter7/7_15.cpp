@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
-/* Command Line Arguments(명령줄 인수) */
+/* Command Line Arguments(명령줄 인수) 
+   command line 사용 시 Boost 라이브러리 활용 가능
+*/
 
 using namespace std;
 
