@@ -2,11 +2,11 @@
 #include <string>
 #include <vector>
 
-/* Encapsulation(Ä¸½¶È­), Access Specifiers(Á¢±Ù ÁöÁ¤ÀÚ), Access Functions(Á¢±Ù ÇÔ¼ö) 
+/* Encapsulation(ìº¡ìŠí™”), Access Specifiers(ì ‘ê·¼ ì§€ì •ì), Access Functions(ì ‘ê·¼ í•¨ìˆ˜) 
 	
 	[Encapsulation]
-	private: µğÆúÆ®, ´Ù¸¥ ¿µ¿ª¿¡¼­ Á¢±Ù ¸øÇÔ
-	public: ¿ÜºÎ¿¡¼­ Á¢±Ù °¡´É
+	private: ë””í´íŠ¸, ë‹¤ë¥¸ ì˜ì—­ì—ì„œ ì ‘ê·¼ ëª»í•¨
+	public: ì™¸ë¶€ì—ì„œ ì ‘ê·¼ ê°€ëŠ¥
 	protected
 
 */
@@ -21,7 +21,7 @@ public: // access specifier
 	int _year;
 	
 public:
-	// private ¿µ¿ªÀÇ member º¯¼öµéÀ» ¿ÜºÎ¿¡¼­ »ç¿ë °¡´ÉÇÏ°Ô ÇÏ´Â access function ¼±¾ğ
+	// private ì˜ì—­ì˜ member ë³€ìˆ˜ë“¤ì„ ì™¸ë¶€ì—ì„œ ì‚¬ìš© ê°€ëŠ¥í•˜ê²Œ í•˜ëŠ” access function ì„ ì–¸
 	void setDate(const int& month_input, const int& day_input, const int& year_input)
 	{
 		_month = month_input;
@@ -46,10 +46,10 @@ public:
 
 	const int& getDay()
 	{
-		return _day; // private º¯¼öÀÎ day °¡Á®¿Àµµ·Ï ÇÔ
+		return _day; // private ë³€ìˆ˜ì¸ day ê°€ì ¸ì˜¤ë„ë¡ í•¨
 	}
 
-	// µ¿ÀÏ class ³» ´Ù¸¥ instanceÀÇ member º¯¼ö¿¡ Á¢±ÙÀÌ °¡´ÉÇÏ´Ù
+	// ë™ì¼ class ë‚´ ë‹¤ë¥¸ instance ê°„ member ë³€ìˆ˜ì— ì ‘ê·¼ì´ ê°€ëŠ¥í•˜ë‹¤
 	void copyFrom(const Date& original)
 	{
 		_month	= original._month;
@@ -60,26 +60,30 @@ public:
 
 int main()
 {
-	// instance »ı¼º
+	// instance ìƒì„±
 	Date today; // { 8, 4, 2025 };
 	
-	// ÇØ´ç member º¯¼öµéÀÌ private·Î ¼±¾ğµÇ¾î ÀÖ±â ¶§¹®¿¡ main¹®¿¡¼­ »ç¿ëÇÒ ¼ö ¾øÀ½
+	// í•´ë‹¹ member ë³€ìˆ˜ë“¤ì´ privateë¡œ ì„ ì–¸ë˜ì–´ ìˆê¸° ë•Œë¬¸ì— mainë¬¸ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ
 	//today._month = 8;
 	//today._day = 4;
 	//today._year = 2025;
 
-	// access functionÀ» ÅëÇØ class ³» private º¯¼ö¿¡ Á¢±Ù
+	// access functionì„ í†µí•´ class ë‚´ private ë³€ìˆ˜ì— ì ‘ê·¼
 	today.setDate(8, 4, 2025);
 	today.setMonth(10);
 	today.setDay(23);
-	today.setYear(2026);
+	//today.setYear(2026);
 
-	cout << today.getDay() << endl;
+	//cout << today.getDay() << endl;
 
+	// ë™ì¼ class ë‚´ ë‹¤ë¥¸ instance ê°„ member ë³€ìˆ˜ì— ì ‘ê·¼ì´ ê°€ëŠ¥í•˜ë‹¤
 	Date copy;
 	copy.copyFrom(today);
 	copy._day = 123;
-	today._month = 45;
+	today._month = 45; // copyì˜ _month ë³€ìˆ˜ê°’ë„ ë°”ë€œ
+
+	cout << today._year << " " << today._month << " " << today._day << endl;
+	cout << copy._year << " " << copy._month << " " << copy._day << endl;
 
 
 	return 0;
