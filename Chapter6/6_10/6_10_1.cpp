@@ -1,6 +1,7 @@
 #include <iostream>
 /* C언어 스타일의 문자열 심볼릭 상수 
 	c++ compiler는 문자열 리터럴이 중복되면 메모리르 절약하기 위해 하나의 리터럴만 저장하고 공유한다.
+ 	문자열 리터럴의 경우 static 영역에 저장된다. -> 여러 번 사용하면 동일한 memory address를 공유할 수 있다.
 */
 using namespace std;
 
