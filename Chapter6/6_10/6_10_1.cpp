@@ -5,7 +5,7 @@ using namespace std;
 // const 포인터변수 는 함수의 리턴형으로 사용 가능하다. 
 const char* getName()
 {
-	return "Jack Jack"; // "Jack Jack은 문자열 리터"
+	return "Jack Jack"; // "Jack Jack은 문자열 리터럴"
 }
 
 
