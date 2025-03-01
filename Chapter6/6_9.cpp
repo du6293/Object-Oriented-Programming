@@ -7,9 +7,10 @@ int main()
 {
 	// 정적 배열도 포인터이다.
 	char name[] = "jackjack"; // 맨 마지막 '\0' 포함됨
-	char* ptr = name;
-
-	const int n_name = sizeof(name) / sizeof(name[0]);
+	char* ptr = name; // 포인터를 name 배열의 시작 주소로 초기화
+	
+	// 배열 크기 계산
+	const int n_name = sizeof(name) / sizeof(name[0]); 
 
 	for (int i = 0; i < n_name; ++i)
 	{
@@ -22,10 +23,8 @@ int main()
 	
 	while (*(ptr) != '\0')
 	{
-		
 		cout << *(ptr) << endl;
 		ptr++;
-
 	}
 
 	return 0;
