@@ -1,6 +1,6 @@
 #include <iostream>
 
-/* reference(ÂüÁ¶)¿Í const*/
+/* reference(ì°¸ì¡°)ì™€ const*/
 using namespace std;
 
 void doSomething(const int x)
@@ -10,15 +10,15 @@ void doSomething(const int x)
 
 int main()
 {
-	const int x = 5;	// xÀÇ °ªÀÌ °íÁ¤µÊ
-	//const int &ref_x = x; // ref_xÀÇ °ªÀÌ °íÁ¤µÊ
+	const int x = 5;	// xì˜ ê°’ì´ ê³ ì •ë¨
+	//const int &ref_x = x; // ref_xì˜ ê°’ì´ ê³ ì •ë¨
 
-	// const°¡ ºÙÀº reference º¯¼ö´Â ¸®ÅÍ·²·Î ÃÊ±âÈ­ °¡´ÉÇÏ´Ù.
+	// constê°€ ë¶™ì€ reference ë³€ìˆ˜ëŠ” ë¦¬í„°ëŸ´ë¡œ ì´ˆê¸°í™” ê°€ëŠ¥í•˜ë‹¤.
 	const int &ref_x = 3 + 4;
-	const int &ref_2 = ref_x; // ref_2ÀÇ °ªÀÌ °íÁ¤µÊ
+	const int &ref_2 = ref_x; // ref_2ì˜ ê°’ì´ ê³ ì •ë¨
 
-	cout << ref_x << endl;
-	cout << &ref_x << endl;
+	cout << ref_x << endl; // 7
+	cout << &ref_x << endl; // memory address 
 
 	return 0;
 }
