@@ -5,12 +5,12 @@
 
 using namespace std;
 
-// array ¿ª½Ã ÆÄ¶ó¹ÌÅÍ·Î µé¾î¿À°Ô µÉ °æ¿ì ÇÑ ¹ø copy°¡ ÀÏ¾î³­´Ù.
-// µû¶ó¼­ array°¡ Å©´Ù¸é copyÇÏ´Â µ¥ ½Ã°£ÀÌ ¸Å¿ì ¿À·¡ °É¸°´Ù.
+// array ì—­ì‹œ íŒŒë¼ë¯¸í„°ë¡œ ë“¤ì–´ì˜¤ê²Œ ë  ê²½ìš° í•œ ë²ˆ copyê°€ ì¼ì–´ë‚œë‹¤.
+// ë”°ë¼ì„œ arrayê°€ í¬ë‹¤ë©´ copyí•˜ëŠ” ë° ì‹œê°„ì´ ë§¤ìš° ì˜¤ë˜ ê±¸ë¦°ë‹¤.
 //void printLength(array<int, 5>my_arr) 
 
-// const¸¦ ¾Õ¿¡ ºÙ¿© ÁÖ¸é main¿¡ ÀÖ´Â array¸¦ copyÇÏÁö ¾Ê°í ¹Ù·Î »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-// reference º¯¼ö¸¦ »ç¿ëÇØµµ µÈ´Ù.
+// constë¥¼ ì•ì— ë¶™ì—¬ ì£¼ë©´ mainì— ìˆëŠ” arrayë¥¼ copyí•˜ì§€ ì•Šê³  ë°”ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
+// reference ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•´ë„ ëœë‹¤.
 void printLength(const array<int, 5> &my_arr)
 {
 	cout << my_arr.size() << endl;
@@ -26,12 +26,12 @@ int main()
 	my_arr = { 0,1,2,3,4 };
 	my_arr = { 0,1,2 };
 
-	cout << my_arr[0] << endl; // 0¹øÂ° elemeent Ãâ·Â
-	//	0¹øÂ° element¸¦ ¹Ì¸® Ã¼Å©ÇÏ°í ¹®Á¦°¡ »ı±â¸é ¿¹¿Ü¸¦ ÀÏÀ¸Å´, ¾à°£ ´À¸®´Ù
-	cout << my_arr.at(0) << endl;	
-	cout << my_arr.size() << endl; // arrayÀÇ ±æÀÌ Ãâ·Â
+	cout << my_arr[0] << endl; // 0ë²ˆì§¸ elemeent ì¶œë ¥ -> 0
+	//	0ë²ˆì§¸ elementë¥¼ ë¯¸ë¦¬ ì²´í¬í•˜ê³  ë¬¸ì œê°€ ìƒê¸°ë©´ ì˜ˆì™¸ë¥¼ ì¼ìœ¼í‚´, ì•½ê°„ ëŠë¦¬ë‹¤
+	cout << my_arr.at(0) << endl; // 0
+	cout << my_arr.size() << endl; // arrayì˜ ê¸¸ì´ ì¶œë ¥ -> 5
 
-	printLength(my_arr);
+	printLength(my_arr); // 5
 
 	return 0;
 }
