@@ -26,6 +26,8 @@ int main()
 	my_arr = { 0,1,2,3,4 };
 	my_arr = { 0,1,2 };
 
+	// 최종 my_arr = { 0,1,2,0,0 }
+
 	cout << my_arr[0] << endl; // 0번째 elemeent 출력 -> 0
 	//	0번째 element를 미리 체크하고 문제가 생기면 예외를 일으킴, 약간 느리다
 	cout << my_arr.at(0) << endl; // 0
