@@ -15,7 +15,7 @@ int main()
 
 	// const가 붙은 reference 변수는 리터럴로 초기화 가능하다.
 	const int &ref_x = 3 + 4;
-	const int &ref_2 = ref_x; // ref_2의 값이 고정됨
+	const int &ref_2 = ref_x; // ref_2의 값이 고정됨 ref_2 = ref_x
 
 	cout << ref_x << endl; // 7
 	cout << &ref_x << endl; // memory address 
