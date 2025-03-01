@@ -1,9 +1,9 @@
 #include <iostream>
-/* Æ÷ÀÎÅÍ¿Í Á¤Àû ¹è¿­*/
+/* í¬ì¸í„°ì™€ ì •ì  ë°°ì—´*/
 using namespace std;
 
-// ÆÄ¶ó¹ÌÅÍ·Î array°¡ µé¾î°¡´Â ¼ø°£ array[]´Â ³»ºÎÀûÀ¸·Î Æ÷ÀÎÅÍÀÌ´Ù.
-//void printArray(int *array)¿Í °°´Ù
+// íŒŒë¼ë¯¸í„°ë¡œ arrayê°€ ë“¤ì–´ê°€ëŠ” ìˆœê°„ array[]ëŠ” ë‚´ë¶€ì ìœ¼ë¡œ í¬ì¸í„°ì´ë‹¤.
+//void printArray(int *array)ì™€ ê°™ë‹¤
 //void printArray(int array[])
 void printArray(int* array)
 {
@@ -21,14 +21,14 @@ int main()
 	cout << sizeof(array) << endl; // 4bytes * 5 = 20 bytes
 
 	int* ptr = array;
-	cout << sizeof(ptr) << endl; // Æ÷ÀÎÅÍ º¯¼öÀÇ Å©±â´Â 4bytes
+	cout << sizeof(ptr) << endl; // í¬ì¸í„° ë³€ìˆ˜ì˜ í¬ê¸°ëŠ” 4bytes
 	cout << endl;
 
-	printArray(array);	// 4bytes
-	cout << array[0] << " " << *array << endl;
+	printArray(array);	// arrayì´ë¦„ë„ í¬ì¸í„° ë³€ìˆ˜ì´ë‹¤. 4bytes
+	cout << array[0] << " " << *array << endl; // ëª¨ë‘ 0ë²ˆì§¸ element ì¶œë ¥
 	cout << endl;
 
-	// pointer arithmetic: Æ÷ÀÎÅÍ¿¡´Ù °ªÀ» ´õÇÏ°í »©´Â °Í
-	cout << *ptr << " " << *(ptr + 1) << endl;
+	// pointer arithmetic: í¬ì¸í„°ì—ë‹¤ ê°’ì„ ë”í•˜ê³  ë¹¼ëŠ” ê²ƒ
+	cout << *ptr << " " << *(ptr + 1) << endl; // 0ë²ˆì§¸ elementì™€ 1ë²ˆì§¸ element ì¶œë ¥
 	return 0;
 }
