@@ -1,24 +1,23 @@
 #include <iostream>
-/* Æ÷ÀÎÅÍ¿Í Á¤Àû ¹è¿­*/
+/* í¬ì¸í„°ì™€ ì •ì  ë°°ì—´*/
 using namespace std;
 
 
 /*
-	array°¡ structure³ª class ¾È¿¡ ÀÖÀ» °æ¿ì¿¡´Â
-	Æ÷ÀÎÅÍ·Î °­Á¦º¯È¯ÀÌ µÇÁö ¾Ê´Â´Ù. 
-	array ÀÚÃ¼°¡ Àü´ŞµÈ´Ù. 
+	arrayê°€ structureë‚˜ class ì•ˆì— ìˆì„ ê²½ìš°ì—ëŠ”
+	í¬ì¸í„°ë¡œ ê°•ì œë³€í™˜ì´ ë˜ì§€ ì•ŠëŠ”ë‹¤. 
+	array ìì²´ê°€ ì „ë‹¬ëœë‹¤. 
 */
 
 struct MyStruct
 {
 	int array[5] = { 9,7,5,3,1 };
-
 };
 
-// doSomething ³»¿¡¼­ »õ·Î¿î ms º¯¼ö°¡ »ı¼ºµÇ°í ±âÁ¸ ms µ¥ÀÌÅÍ¸¦ ±×´ë·Î º¹»ç. 
-void doSomething(MyStruct ms)	// ±¸Á¶Ã¼¸¦ °ªÀ¸·Î Àü´Ş 
+// doSomething ë‚´ì—ì„œ ìƒˆë¡œìš´ ms ë³€ìˆ˜ê°€ ìƒì„±ë˜ê³  ê¸°ì¡´ structure ë‚´ array ë³µì‚¬ë³¸ ìƒì„±. 
+void doSomething(MyStruct ms)	// êµ¬ì¡°ì²´ë¥¼ ê°’ìœ¼ë¡œ ì „ë‹¬ 
 {	
-	cout << sizeof(ms.array) << endl; // º¹»çµÈ ±¸Á¶Ã¼ÀÇ Å©±â ¹İÈ¯ 
+	cout << sizeof(ms.array) << endl; // ë³µì‚¬ëœ êµ¬ì¡°ì²´ ë‚´ ë°°ì—´ì˜ í¬ê¸° ë°˜í™˜ 
 }
 
 int main()
@@ -28,7 +27,6 @@ int main()
 	cout << ms.array[0] << endl;	// 9
 	cout << sizeof(ms.array) << endl;	// 20
 	doSomething(ms);	// 20
-
 
 	return 0;
 }
