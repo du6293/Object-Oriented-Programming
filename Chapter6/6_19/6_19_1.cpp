@@ -1,5 +1,5 @@
 #include <iostream>
-/* ÀÌÁß Æ÷ÀÎÅÍ¿Í µ¿Àû ´ÙÂ÷¿ø ¹è¿­ */
+/* ì´ì¤‘ í¬ì¸í„°ì™€ ë™ì  ë‹¤ì°¨ì› ë°°ì—´ */
 using namespace std;
 
 int main()
@@ -11,9 +11,9 @@ int main()
 	ptr = &value;
 	ptrptr = &ptr;
 
-	cout << ptr << " " << *ptr << " " << &ptr << " " << endl;
-	cout << ptrptr << " " << *ptrptr << " " << &ptrptr << " " << endl;
-	cout << **ptrptr << endl;
+	cout << ptr << " " << *ptr << " " << &ptr << " " << endl; // value ì£¼ì†Œ   5   ptr ì£¼ì†Œ
+	cout << ptrptr << " " << *ptrptr << " " << &ptrptr << " " << endl; // ptr ì£¼ì†Œ  value ì£¼ì†Œ  ptrptr ì£¼ì†Œ
+	cout << **ptrptr << endl;  // 5
 
 	return 0;
 }
