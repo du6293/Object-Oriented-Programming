@@ -14,7 +14,6 @@ int main()
 	// const가 앞에 붙으면 포인터 변수가 문자열 리터럴을 가리킬 수 있다.
 	//const char *name = "Jack Jack"; // 리터럴의 시작 주소를 가리키는 포인터 변수
 	//const char *name2 = "Jack Jack";
-
 	const char* name = getName();
 	const char* name2 = getName();
 
