@@ -20,7 +20,7 @@ int main()
 
 	// 컴파일러가 두 리터럴 변수의 내용이 같으므로 같은 메모리 주소를 사용하도록 함
 	// getName()이 호출될 때마다 동일한 리터럴을 가리키는 포인터를 반
-	cout << (uintptr_t)name << endl;
+	cout << (uintptr_t)name << endl; // uintptr_t: 포인터값을 정수형 주소값으로 변환해서 출력
 	cout << (uintptr_t)name2 << endl;
 
 
