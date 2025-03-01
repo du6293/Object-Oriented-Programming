@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	// 정적 배열도 포인터이다.
-	char name[] = "jackjack";
+	char name[] = "jackjack"; // 맨 마지막 '\0' 포함됨
 	char* ptr = name;
 
 	const int n_name = sizeof(name) / sizeof(name[0]);
