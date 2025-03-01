@@ -1,8 +1,8 @@
 #include <iostream>
-
+/* Cì–¸ì–´ ìŠ¤íƒ€ì¼ì˜ ë¬¸ìžì—´ ì‹¬ë³¼ë¦­ ìƒìˆ˜ */
 using namespace std;
 
-// const Æ÷ÀÎÅÍº¯¼ö ´Â ÇÔ¼öÀÇ ¸®ÅÏÇüÀ¸·Î »ç¿ë °¡´ÉÇÏ´Ù. 
+// const í¬ì¸í„°ë³€ìˆ˜ ëŠ” í•¨ìˆ˜ì˜ ë¦¬í„´í˜•ìœ¼ë¡œ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤. 
 const char* getName()
 {
 	return "Jack Jack";
@@ -11,14 +11,14 @@ const char* getName()
 
 int main()
 {
-	// const°¡ ¾Õ¿¡ ºÙÀ¸¸é Æ÷ÀÎÅÍ º¯¼ö°¡ ¹®ÀÚ¿­ ¸®ÅÍ·²À» °¡¸®Å³ ¼ö ÀÖ´Ù.
-	//const char *name = "Jack Jack"; // ¸®ÅÍ·²ÀÇ ½ÃÀÛ ÁÖ¼Ò¸¦ °¡¸®Å°´Â Æ÷ÀÎÅÍ º¯¼ö
+	// constê°€ ì•žì— ë¶™ìœ¼ë©´ í¬ì¸í„° ë³€ìˆ˜ê°€ ë¬¸ìžì—´ ë¦¬í„°ëŸ´ì„ ê°€ë¦¬í‚¬ ìˆ˜ ìžˆë‹¤.
+	//const char *name = "Jack Jack"; // ë¦¬í„°ëŸ´ì˜ ì‹œìž‘ ì£¼ì†Œë¥¼ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„° ë³€ìˆ˜
 	//const char *name2 = "Jack Jack";
 
 	const char* name = getName();
 	const char* name2 = getName();
 
-	// ÄÄÆÄÀÏ·¯°¡ µÎ ¸®ÅÍ·² º¯¼öÀÇ ³»¿ëÀÌ °°À¸¹Ç·Î °°Àº ¸Þ¸ð¸® ÁÖ¼Ò¸¦ »ç¿ëÇÏµµ·Ï ÇÔ
+	// ì»´íŒŒì¼ëŸ¬ê°€ ë‘ ë¦¬í„°ëŸ´ ë³€ìˆ˜ì˜ ë‚´ìš©ì´ ê°™ìœ¼ë¯€ë¡œ ê°™ì€ ë©”ëª¨ë¦¬ ì£¼ì†Œë¥¼ ì‚¬ìš©í•˜ë„ë¡ í•¨
 	cout << (uintptr_t)name << endl;
 	cout << (uintptr_t)name2 << endl;
 
