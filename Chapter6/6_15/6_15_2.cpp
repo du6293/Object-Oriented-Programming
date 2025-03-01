@@ -1,9 +1,9 @@
 #include <iostream>
 
-/* reference(ÂüÁ¶)¿Í const*/
+/* reference(ì°¸ì¡°)ì™€ const*/
 using namespace std;
 
-// reference·Î ³Ñ°ÜÁáÀ¸´Ï±î º¯¼ö º¹»ç°¡ ¾È ÀÏ¾î³­´Ù.
+// referenceë¡œ ë„˜ê²¨ì¤¬ìœ¼ë‹ˆê¹Œ ë³€ìˆ˜ ë³µì‚¬ê°€ ì•ˆ ì¼ì–´ë‚œë‹¤.
 void doSomething(const int &x)
 {
 	cout << x << endl;
@@ -13,13 +13,13 @@ int main()
 {
 	int a = 1;
 
-	doSomething(a);
+	doSomething(a); // 1
 
-	// doSomething ÇÔ¼öÀÇ ÆÄ¶ó¹ÌÅÍ¿¡ const°¡ ºÙ¾ú±â ¶§¹®¿¡ 
-	// »ó¼ö¸¦ ¹Ù·Î ÆÄ¶ó¹ÌÅÍ·Î ÁÖ¾îµµ µÈ´Ù. 
-	doSomething(1);	
-	doSomething(a + 3);
-	doSomething(3 * 4);
+	// doSomething í•¨ìˆ˜ì˜ íŒŒë¼ë¯¸í„°ì— constê°€ ë¶™ì—ˆê¸° ë•Œë¬¸ì— 
+	// ìƒìˆ˜ë¥¼ ë°”ë¡œ íŒŒë¼ë¯¸í„°ë¡œ ì£¼ì–´ë„ ëœë‹¤. 
+	doSomething(1);	// 1
+	doSomething(a + 3); // 4
+	doSomething(3 * 4); // 12
 
 	return 0;
 }
