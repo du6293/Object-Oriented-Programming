@@ -1,9 +1,9 @@
 #include <iostream>
 
-/* Dynamic Memory Allocation(¸Ş¸ğ¸® µ¿Àû ÇÒ´ç)
-	- new¿Í delete
-	new delete °úÁ¤Àº OS¿¡°Ô ÇÑ ¹ø °¬´Ù ¿Í¾ß ÇÏ±â ¶§¹®¿¡ Á¶±İ ´À¸®´Ù.
-	µû¶ó¼­ new delete¸¦ Àû´çÈ÷ »ç¿ëÇØ¾ß ÇÑ´Ù.
+/* Dynamic Memory Allocation(ë©”ëª¨ë¦¬ ë™ì  í• ë‹¹)
+	- newì™€ delete
+	new delete ê³¼ì •ì€ OSì—ê²Œ í•œ ë²ˆ ê°”ë‹¤ ì™€ì•¼ í•˜ê¸° ë•Œë¬¸ì— ì¡°ê¸ˆ ëŠë¦¬ë‹¤.
+	ë”°ë¼ì„œ new deleteë¥¼ ì ë‹¹íˆ ì‚¬ìš©í•´ì•¼ í•œë‹¤.
 */
 
 using namespace std;
@@ -11,17 +11,17 @@ using namespace std;
 int main()
 {
 	// memory leak
-	// loop°¡ µ¹ ¶§¸¶´Ù °è¼ÓÇØ¼­ heap memory¿¡ »õ·Î¿î memory address¸¦ allocateÇÔ
-	// °á±¹ memory leakÀ¸·Î out of memory ¹ß»ı
-	// ÀÛ¾÷°ü¸®ÀÚÀÇ Memory°¡ Âß ¿Ã¶ó°¨
-	// Debug > Windows > Show Diagnostic ToolsÅ¬¸¯ > Local Windows Debugger Å¬¸¯
-	// Process Memory°¡ Âß ¿Ã¶ó°¡´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ½
+	// loopê°€ ëŒ ë•Œë§ˆë‹¤ ê³„ì†í•´ì„œ heap memoryì— ìƒˆë¡œìš´ memory addressë¥¼ allocateí•¨
+	// ê²°êµ­ memory leakìœ¼ë¡œ out of memory ë°œìƒ
+	// ì‘ì—…ê´€ë¦¬ìì˜ Memoryê°€ ì­‰ ì˜¬ë¼ê°
+	// Debug > Windows > Show Diagnostic Tools > Local Windows Debugger 
+	// Process Memoryê°€ ì­‰ ì˜¬ë¼ê°€ëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìˆìŒ
 	while (true)
 	{
 		int* ptr = new int;
 		cout << ptr << endl;
 		
-		delete ptr; // Process Memory°¡ ÀÏÁ¤ÇÏ°Ô À¯ÁöµÊÀ» È®ÀÎÇÒ ¼ö ÀÖÀ½
+		delete ptr; // Process Memoryê°€ ì¼ì •í•˜ê²Œ ìœ ì§€ë¨ì„ í™•ì¸í•  ìˆ˜ ìˆìŒ
 	}
 
 	return 0;
