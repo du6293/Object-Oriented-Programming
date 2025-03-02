@@ -1,22 +1,21 @@
 #include <iostream>
 #include <array>
-/* ´Ù¾çÇÑ return valueµé (°ª, ÂüÁ¶, ÁÖ¼Ò, ±¸Á¶Ã¼, Æ©ÇÃ)*/
+/* ë‹¤ì–‘í•œ return valueë“¤ (ê°’, ì°¸ì¡°, ì£¼ì†Œ, êµ¬ì¡°ì²´, íŠœí”Œ)*/
 using namespace std;
-/* Case3. return typeÀÌ structureÀÏ ¶§ 
-¿©·¯ °³ÀÇ °ªÀ» returnÇÏ°í ½ÍÀ» ¶§ ÁÖ·Î »ç¿ëÇÑ´Ù. 
-ÇÔ¼ö 1°³¸¦ ¸¸µé ¶§¸¶´Ù ±¸Á¶Ã¼¸¦ ¸¸µé¾î ÁÖ¾î¾ß ÇÑ´Ù.
-µû¶ó¼­ ±¸Çö overhead°¡ Å©´Ù.
+/* Case3. return typeì´ structureì¼ ë•Œ 
+ì—¬ëŸ¬ ê°œì˜ ê°’ì„ returní•˜ê³  ì‹¶ì„ ë•Œ ì£¼ë¡œ ì‚¬ìš©í•œë‹¤. 
+í•¨ìˆ˜ 1ê°œë¥¼ ë§Œë“¤ ë•Œë§ˆë‹¤ êµ¬ì¡°ì²´ë¥¼ ë§Œë“¤ì–´ ì£¼ì–´ì•¼ í•œë‹¤.
+ë”°ë¼ì„œ êµ¬í˜„ overheadê°€ í¬ë‹¤.
 */
+
 struct S
 {
 	int a, b, c, d;
-
 };
 
 S getStruct() 
 {
 	S my_s{ 1,2,3,4 };
-
 	return my_s;
 }
 
