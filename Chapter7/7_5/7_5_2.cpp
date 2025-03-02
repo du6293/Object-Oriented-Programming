@@ -1,7 +1,7 @@
 #include <iostream>
-/* ´Ù¾çÇÑ return valueµé (°ª, ÂüÁ¶, ÁÖ¼Ò, ±¸Á¶Ã¼, Æ©ÇÃ)*/
+/* ë‹¤ì–‘í•œ return valueë“¤ (ê°’, ì°¸ì¡°, ì£¼ì†Œ, êµ¬ì¡°ì²´, íŠœí”Œ)*/
 using namespace std;
-/* Case3. return typeÀÌ addressÀÏ ¶§ */
+/* Case3. return typeì´ addressì¼ ë•Œ */
 int* getValue(int x) 
 {
 	int value = x * 2;
@@ -11,9 +11,9 @@ int* getValue(int x)
 
 int main()
 {
-	int value = *getValue(3); // getValueÇÔ¼ö ³» value °ªÀº ÇÔ¼ö°¡ Á¾·áµÇ¸é »ç¶óÁö´Â Áö¿ªº¯¼öÀÌ¹Ç·Î
-							 // main¿¡¼­ ÇÔ¼ö¸¦ È£ÃâÇÏ°í ³­ ´ÙÀ½ °ªÀ» ±× ¸®ÅÏ °ªÀ» Ãâ·ÂÇÏµµ·Ï ÇÏ´Â °ÍÀº À§ÇèÇÏ´Ù.
-
+	int value = *getValue(3); // getValueí•¨ìˆ˜ ë‚´ value ê°’ì€ í•¨ìˆ˜ê°€ ì¢…ë£Œë˜ë©´ ì‚¬ë¼ì§€ëŠ” ì§€ì—­ë³€ìˆ˜ì´ë¯€ë¡œ
+				  // mainì—ì„œ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ê³  ë‚œ ë‹¤ìŒ ê°’ì„ 
+				  // ê·¸ ë¦¬í„´ ê°’ì„ ì¶œë ¥í•˜ë„ë¡ í•˜ëŠ” ê²ƒì€ ìœ„í—˜í•˜ë‹¤.
 	cout << value << endl;
 	return 0;
 }
