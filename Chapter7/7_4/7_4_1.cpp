@@ -1,16 +1,16 @@
 #include <iostream>
 
-/* ÁÖ¼Ò¿¡ ÀÇÇÑ ÀÎ¼ö Àü´Þ
+/* ì£¼ì†Œì— ì˜í•œ ì¸ìˆ˜ ì „ë‹¬
 (Passing Arguments by Address, Call By Address) 
-ÇÔ¼öÀÇ ¸Å°³º¯¼ö·Î Æ÷ÀÎÅÍ º¯¼ö¸¦ Àü´Þ = º¯¼öÀÇ ÁÖ¼Ò¸¦ Àü´Þ 
-È£Ãâ ½Ã º¯¼öÀÇ ÁÖ¼Ò¸¦ Àü´ÞÇØ¾ß ÇÔ 
+í•¨ìˆ˜ì˜ ë§¤ê°œë³€ìˆ˜ë¡œ í¬ì¸í„° ë³€ìˆ˜ë¥¼ ì „ë‹¬ = ë³€ìˆ˜ì˜ ì£¼ì†Œë¥¼ ì „ë‹¬ 
+í˜¸ì¶œ ì‹œ ë³€ìˆ˜ì˜ ì£¼ì†Œë¥¼ ì „ë‹¬í•´ì•¼ í•¨ 
 */
 
 using namespace std;
 
 void foo(int* ptr)
 {
-	// mainÀÇ ptr º¯¼öÀÇ ÁÖ¼Ò¿Í foo ÇÔ¼öÀÇ ptr º¯¼öÀÇ ÁÖ¼Ò°¡ ´Ù¸£´Ù
+	// mainì˜ ptr ë³€ìˆ˜ì˜ ì£¼ì†Œì™€ foo í•¨ìˆ˜ì˜ ptr ë³€ìˆ˜ì˜ ì£¼ì†Œê°€ ë‹¤ë¥´ë‹¤
 	cout << *ptr << " " << ptr << " " << &ptr << endl;
 }
 
@@ -18,13 +18,13 @@ int main()
 {
 	int value = 5;
 
-	cout << value << " " << &value << endl;
+	cout << value << " " << &value << endl; // 5 010FFEC8
 
 	int* ptr = &value;
-	cout << &ptr << endl;	
-	foo(ptr);
-	foo(&value);	// ÁÖ¼Ò¸¦ Àü´Þ 
-	// foo(5); ¸®ÅÍ·²Àº ÁÖ¼Ò°¡ ¾ø±â ¶§¹®¿¡ ÇÔ¼ö ÆÄ¶ó¹ÌÅÍ¿¡ const¸¦ ºÙÀÌ´õ¶óµµ ¹Ù·Î ³Ö¾îÁÙ ¼ö x
+	cout << &ptr << endl;	// 010FFED0
+	foo(ptr);	// 5 010FFEC8 010FFECC
+	foo(&value);	//  5 010FFEC8 010FFECC  ì£¼ì†Œë¥¼ ì „ë‹¬ 
+	// foo(5); ë¦¬í„°ëŸ´ì€ ì£¼ì†Œê°€ ì—†ê¸° ë•Œë¬¸ì— í•¨ìˆ˜ íŒŒë¼ë¯¸í„°ì— constë¥¼ ë¶™ì´ë”ë¼ë„ ë°”ë¡œ ë„£ì–´ì¤„ ìˆ˜ x
 
 	return 0;
 }
