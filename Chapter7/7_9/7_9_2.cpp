@@ -1,6 +1,6 @@
 #include <iostream>
 #include <array>
-/* ÇÔ¼ö Æ÷ÀÎÅÍ (Function Pointers) */
+/* í•¨ìˆ˜í¬ì¸í„° (Function Pointers) */
 using namespace std;
 
 bool isEven(const int& number)
