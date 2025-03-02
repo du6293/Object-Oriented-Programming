@@ -1,29 +1,26 @@
 #include <iostream>
-/* Function Overloading(ÇÔ¼ö ¿À¹ö·Îµù)
-	µ¿ÀÏÇÑ ÀÌ¸§ÀÇ ÇÔ¼ö¸¦ ¿©·¯ °³ »ç¿ëÇÏ´Â °Í 
+/* Function Overloading(í•¨ìˆ˜ ì˜¤ë²„ë¡œë”©)
+	ë™ì¼í•œ ì´ë¦„ì˜ í•¨ìˆ˜ë¥¼ ì—¬ëŸ¬ ê°œ ì‚¬ìš©í•˜ëŠ” ê²ƒ 
 
-	ÇÔ¼öÀÇ ÀÌ¸§ÀÌ °°´õ¶óµµ ÀÔ·ÂÀ¸·Î ÁÖ´Â parameter°¡ ´Ù¸£¸é ´Ù¸¥ ÇÔ¼öÀÌ´Ù.
-	¸Å°³º¯¼ö Å¸ÀÔÀÌ °¡Àå Àß ¸Â´Â, ÁÖ¾îÁø ÀÎÀÚ¿Í ¸Å°³º¯¼öÀÇ Á¶ÇÕÀÌ ÁÁÀº ÇÔ¼ö¸¦ ½ÇÇàÇÔ.
-	return type¸¸À¸·Î´Â ±¸ºÐÇÒ ¼ö ¾ø´Ù. 
+	í•¨ìˆ˜ì˜ ì´ë¦„ì´ ê°™ë”ë¼ë„ ìž…ë ¥ìœ¼ë¡œ ì£¼ëŠ” parameterê°€ ë‹¤ë¥´ë©´ ë‹¤ë¥¸ í•¨ìˆ˜ì´ë‹¤.
+	ë§¤ê°œë³€ìˆ˜ íƒ€ìž…ì´ ê°€ìž¥ ìž˜ ë§žëŠ”, ì£¼ì–´ì§„ ì¸ìžì™€ ë§¤ê°œë³€ìˆ˜ì˜ ì¡°í•©ì´ ì¢‹ì€ í•¨ìˆ˜ë¥¼ ì‹¤í–‰í•¨.
+	return typeë§Œìœ¼ë¡œëŠ” êµ¬ë¶„í•  ìˆ˜ ì—†ë‹¤. 
 */
 using namespace std;
 
 
 void getRandomValue(int &x) 
 {
-	
 }
 
 void getRandomValue(double &x)
 {
-
 }
 
 int main()
 {
-
-	// overloadµÈ µÎ ÇÔ¼ö°¡ ¸ðµÎ void ÀÌ°í parameter¸¸À¸·Î ±¸ºÐÇÒ ¼ö ÀÖÀ¸¹Ç·Î
-	// ¹Ì¸® ÀÔ·ÂÀ¸·Î µé¾î°¥ ÆÄ¶ó¹ÌÅÍ¸¦ ¼±¾ðÇØÁÖ¾î¾ß ÇÑ´Ù.
+	// overloadëœ ë‘ í•¨ìˆ˜ê°€ ëª¨ë‘ void ì´ê³  parameterë§Œìœ¼ë¡œ êµ¬ë¶„í•  ìˆ˜ ìžˆìœ¼ë¯€ë¡œ
+	// ë¯¸ë¦¬ ìž…ë ¥ìœ¼ë¡œ ë“¤ì–´ê°ˆ íŒŒë¼ë¯¸í„°ë¥¼ ì„ ì–¸í•´ì£¼ì–´ì•¼ í•œë‹¤.
 	int x;
 	getRandomValue(x);
 
