@@ -1,8 +1,8 @@
 #include <iostream>
-/* ´Ù¾çÇÑ return valueµé (°ª, ÂüÁ¶, ÁÖ¼Ò, ±¸Á¶Ã¼, Æ©ÇÃ)*/
+/* ë‹¤ì–‘í•œ return valueë“¤ (ê°’, ì°¸ì¡°, ì£¼ì†Œ, êµ¬ì¡°ì²´, íŠœí”Œ)*/
 using namespace std;
-/* Case1. return typeÀÌ vallueÀÏ ¶§ */
-int getValue(int x) // mainÀÇ x°ªÀÌ º¹»ç°¡ ÀÏ¾î³ª »õ·Î¿î º¯¼ö x¸¦ »ı¼º
+/* Case1. return typeì´ valueì¼ ë•Œ */
+int getValue(int x) // mainì˜ xê°’ì´ ë³µì‚¬ê°€ ì¼ì–´ë‚˜ ìƒˆë¡œìš´ ë³€ìˆ˜ xë¥¼ ìƒì„±
 {
 	int value = x * 2;
 
