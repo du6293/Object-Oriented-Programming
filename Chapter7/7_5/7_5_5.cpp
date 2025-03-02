@@ -1,9 +1,9 @@
 #include <iostream>
-/* ´Ù¾çÇÑ return valueµé (°ª, ÂüÁ¶, ÁÖ¼Ò, ±¸Á¶Ã¼, Æ©ÇÃ)*/
+/* ë‹¤ì–‘í•œ return valueë“¤ (ê°’, ì°¸ì¡°, ì£¼ì†Œ, êµ¬ì¡°ì²´, íŠœí”Œ)*/
 using namespace std;
-/* Case2. return typeÀÌ referenceÀÏ ¶§ */
+/* Case2. return typeì´ referenceì¼ ë•Œ */
 
-// design pattern¿¡¼­ ÀÚÁÖ ¾²ÀÌ´Â ÇüÅÂÀÇ ÄÚµå 
+// design patternì—ì„œ ìì£¼ ì“°ì´ëŠ” í˜•íƒœì˜ ì½”ë“œ 
 int& getValue(int x)
 {
 	int value = x * 2;
@@ -12,10 +12,10 @@ int& getValue(int x)
 
 int main()
 {
-	int value = getValue(5); // getValue ÇÔ¼öÀÇ º¯¼ö value´Â Áö¿ªº¯¼ö·Î ÇÔ¼ö°¡ Á¾·áµÇ¸é »ç¶óÁø´Ù.
+	int value = getValue(5); // getValue í•¨ìˆ˜ì˜ ë³€ìˆ˜ valueëŠ” ì§€ì—­ë³€ìˆ˜ë¡œ í•¨ìˆ˜ê°€ ì¢…ë£Œë˜ë©´ ì‚¬ë¼ì§„ë‹¤.
 
 	cout << value << endl;
-	cout << value << endl;	// getValue ÇÔ¼öÀÇ º¯¼ö valueÀÇ ¸Ş¸ğ¸®°¡ »ç¶óÁ³±â ¶§¹®¿¡ 
-							//À­ ÁÙ¿¡¼­ Ãâ·ÂÇÑ °ª°ú ´Ù¸¥ °ªÀÌ ³ª¿Â´Ù.
+	cout << value << endl;	// getValue í•¨ìˆ˜ì˜ ë³€ìˆ˜ valueì˜ ë©”ëª¨ë¦¬ê°€ ì‚¬ë¼ì¡Œê¸° ë•Œë¬¸ì— 
+				// ìœ— ì¤„ì—ì„œ ì¶œë ¥í•œ ê°’ê³¼ ë‹¤ë¥¸ ê°’ì´ ë‚˜ì˜¨ë‹¤.
 	return 0;
 }
