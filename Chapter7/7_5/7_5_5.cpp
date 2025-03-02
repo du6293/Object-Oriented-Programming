@@ -14,7 +14,6 @@ int main()
 {
 	int value = getValue(5); // getValue 함수의 변수 value는 지역변수로 함수가 종료되면 사라진다.
 
-	cout << value << endl;
 	cout << value << endl;	// getValue 함수의 변수 value의 메모리가 사라졌기 때문에 
 				// 윗 줄에서 출력한 값과 다른 값이 나온다.
 	return 0;
