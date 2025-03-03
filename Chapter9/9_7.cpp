@@ -1,5 +1,5 @@
 #include <iostream>
-
+/* 괄호(()) 연산자 overloading과 함수객체 */
 using namespace std;
 
 class Accumulator
